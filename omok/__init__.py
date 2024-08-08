@@ -1,0 +1,1 @@
+from omok import display
