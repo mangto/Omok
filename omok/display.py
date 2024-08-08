@@ -25,3 +25,12 @@ class display:
         pygame.display.set_caption("Delu Omok")
 
         pass
+    
+    def render(self) -> None:
+        return
+    
+    def events(self) -> None:
+        return
+    
+    def loop(self) -> None:
+        return
