@@ -11,3 +11,9 @@ class system:
     def __init__(self) -> None:
         self.display = display()
         pass
+
+    def set_options(self, options:dict):
+        return
+    
+    def run(self):
+        return
