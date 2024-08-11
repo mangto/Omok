@@ -61,7 +61,7 @@ def wndProc(oldWndProc, draw_callback, hWnd, message, wParam, lParam):
     return win32gui.CallWindowProc(oldWndProc, hWnd, message, wParam, lParam)
 
 class draw:
-    def rrect(surface, color, rect, radius=0.4):
+    def rrect(surface, rect, color, radius=0.4):
         rect         = pygame.Rect(rect)
         color        = pygame.Color(*color)
         alpha        = color.a
@@ -173,7 +173,7 @@ class Display:
 
                 # draw.aacircle(self.PlateSurf, (128, 128, 128), self.calc_cord((x, y)), 25)
                 draw.rrect(self.PlateSurf, [pos[0]-24, pos[1]-24, 48, 48], (128, 128, 128), .99)
-                draw.rrect(self.PlateSurf, [pos[0]-23, pos[1]-23, 46, 46], color, .99)
+                draw.rrect(self.PlateSurf, [pos[0]-23, pos[1]-23, 46, 46], color, 1.)
         return
     
     def render(self) -> None:
