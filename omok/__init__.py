@@ -1,3 +1,3 @@
-from omok.display import display
+from omok.display import Display as display
 from omok.omok import *
 from omok.adversarial import *
