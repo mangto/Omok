@@ -1,3 +1,4 @@
 import omok
 
-system = omok.system()
+display = omok.Display()
+display.loop()
